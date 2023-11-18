@@ -1,5 +1,5 @@
 {
-  "name": "@examples/next-websockets-starter",
+  "name": "next-trpc-boostrap",
   "version": "10.43.6",
   "private": true,
   "engines": {
@@ -28,7 +28,6 @@
     "lint-fix": "pnpm lint --fix",
     "test-dev": "cross-env APP_ENV=test start-server-and-test dev 3000 test",
     "test-start": "cross-env APP_ENV=test WS_URL=ws://localhost:3000 start-server-and-test start 3000 test",
-    "test": "playwright test",
     "postinstall": "prisma generate"
   },
   "prisma": {
@@ -57,7 +56,6 @@
     "zod": "^3.0.0"
   },
   "devDependencies": {
-    "@playwright/test": "^1.26.1",
     "@tanstack/react-query-devtools": "^4.18.0",
     "@types/node": "^18.16.16",
     "@types/react": "^18.2.33",
