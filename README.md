@@ -1,7 +1,5 @@
 # Prisma + tRPC + WebSockets
 
-Try demo http://websockets.trpc.io/
-
 ## Features
 
 - 🧙‍♂️ E2E type safety with [tRPC](https://trpc.io)
@@ -18,23 +16,10 @@ Try demo http://websockets.trpc.io/
 ## Setup
 
 ```bash
-pnpm create next-app --example https://github.com/trpc/trpc --example-path examples/next-prisma-websockets-starter trpc-prisma-websockets-starter
-cd trpc-prisma-websockets-starter
 pnpm i
 pnpm dx
+pnpm dev
 ```
-
-## Deployment
-
-### Using [Render](https://render.com/)
-
-The project contains a [`render.yaml`](./render.yaml) [_"Blueprint"_](https://render.com/docs/blueprint-spec) which makes the project easily deployable on [Render](https://render.com/).
-
-The database is setup with a `starter` plan, but you can use a free plan for 90 days.
-
-Go to [dashboard.render.com/blueprints](https://dashboard.render.com/blueprints) and connect to this Blueprint and see how the app and database automatically gets deployed.
-
-You will either need to create an environment group called `trpc-websockets` with environment variables or remove that from `render.yaml` in favor of manual environment variables that overrides the ones in `/.env`.
 
 ## Files of note
 
@@ -73,7 +58,3 @@ pnpm test-start # runs e2e tests on `next start` - build required before
 pnpm test:unit  # runs normal Vitest unit tests
 pnpm test:e2e   # runs e2e tests
 ```
-
----
-
-Created by [@alexdotjs](https://twitter.com/alexdotjs).
